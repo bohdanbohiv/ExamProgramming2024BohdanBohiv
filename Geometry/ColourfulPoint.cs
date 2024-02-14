@@ -14,7 +14,7 @@
         }
         public void NextColour()
         {
-            ++_colour;
+            _colour = (PointColour)((int)(Colour + 1) % 3);
         }
         public void Normalize()
         {
