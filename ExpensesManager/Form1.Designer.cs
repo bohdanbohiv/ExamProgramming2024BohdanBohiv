@@ -32,6 +32,7 @@
             this.pathTextBox = new System.Windows.Forms.TextBox();
             this.openButton = new System.Windows.Forms.Button();
             this.resultTextBox = new System.Windows.Forms.TextBox();
+            this.summaryButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -68,11 +69,22 @@
             this.resultTextBox.Size = new System.Drawing.Size(464, 287);
             this.resultTextBox.TabIndex = 3;
             // 
+            // summaryButton
+            // 
+            this.summaryButton.Location = new System.Drawing.Point(30, 146);
+            this.summaryButton.Name = "summaryButton";
+            this.summaryButton.Size = new System.Drawing.Size(75, 23);
+            this.summaryButton.TabIndex = 4;
+            this.summaryButton.Text = "summary";
+            this.summaryButton.UseVisualStyleBackColor = true;
+            this.summaryButton.Click += new System.EventHandler(this.summaryButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.summaryButton);
             this.Controls.Add(this.resultTextBox);
             this.Controls.Add(this.openButton);
             this.Controls.Add(this.pathTextBox);
@@ -90,6 +102,7 @@
         private System.Windows.Forms.TextBox pathTextBox;
         private System.Windows.Forms.Button openButton;
         private System.Windows.Forms.TextBox resultTextBox;
+        private System.Windows.Forms.Button summaryButton;
     }
 }
 
